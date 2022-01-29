@@ -1,0 +1,16 @@
+.Weather .container {
+  align-self: center;
+  background-color: #f4e4e3;
+  border-radius: 6px;
+  height: 700px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.Weather .forecast {
+  border: 3px solid purple;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 22%;
+}
