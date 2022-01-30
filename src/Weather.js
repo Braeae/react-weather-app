@@ -1,21 +1,27 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Dates from "./Dates";
+import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 
-function Weather() {
+function Weather(props) {
+  const [ready, setReady] = useState(false);
   const [weatherInfo, setWeatherInfo] = useState(null);
-  const [city, setCity] = useState(null);
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleSearch(response) {
     setWeatherInfo({
       coordinates: response.data.coord,
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
+      feels: response.data.main.feels_like,
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
     });
+    setReady(true);
   }
 
   function handleSubmit(event) {
@@ -32,65 +38,28 @@ function Weather() {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleSearch);
   }
+  if (ready) {
+    return (
+      <div className="Weather">
+        <div className="container">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="search"
+              placeholder="Search a city"
+              className="search-form m-4"
+              onChange={changeCity}
+            ></input>
+            <input type="submit" value="Search"></input>
+          </form>
 
-  return (
-    <div className="Weather">
-      <div className="container">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            placeholder="Search a city"
-            className="search-form m-4"
-          ></input>
-          <input type="submit" value="Search"></input>
-        </form>
-
-        <h1>Amsterdam</h1>
-        <p>Sunday, 12.20</p>
-        <p>Cloudy</p>
-
-        <h3 className="m-3">30 °C | F</h3>
-
-        <div className="row">
-          <div className="col-4">
-            <p>icon</p>
-            <p>{weatherInfo.humidity}</p>
-          </div>
-          <div className="col-4">
-            <p>icon</p>
-            <p>Wind</p>
-          </div>
-          <div className="col-4">
-            <p>icon</p>
-            <p>Feels like</p>
-          </div>
-        </div>
-
-        <div className="row mt-5">
-          <div className="forecast col-3">
-            <p>Sun</p>
-            <p>5° 1°</p>
-            <p>IMG</p>
-          </div>
-          <div className="forecast col-3">
-            <p>Mon</p>
-            <p>5° 1°</p>
-            <p>IMG</p>
-          </div>
-          <div className="forecast col-3">
-            <p>Tue</p>
-            <p>5° 1°</p>
-            <p>IMG</p>
-          </div>
-          <div className="forecast col-3">
-            <p>Wed</p>
-            <p>5° 1°</p>
-            <p>IMG</p>
-          </div>
+          <WeatherInfo data={weatherInfo} />
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    search();
+    return "Loading...";
+  }
 }
 
 export default Weather;

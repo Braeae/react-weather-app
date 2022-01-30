@@ -4,7 +4,7 @@
   border-radius: 6px;
   height: 700px;
   width: 400px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .Weather .forecast {
@@ -13,4 +13,11 @@
   flex-wrap: wrap;
   margin: 0 auto;
   width: 22%;
+}
+
+.Weather .otherValues {
+  width: 33%;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 10px;
 }
