@@ -23,7 +23,10 @@ function Temperatures(props) {
       <div className="Temperatures">
         <span className="current-temperature">{Math.round(props.celsius)}</span>
         <span className="units">
-          °C |<a onClick={getFahrenheit}>°F</a>
+          °C |
+          <a href="#" onClick={getFahrenheit}>
+            °F
+          </a>
         </span>
       </div>
     );
@@ -32,7 +35,12 @@ function Temperatures(props) {
       <div className="Temperatures">
         <span className="current-temperature">{Math.round(fahrenheit())}</span>
         <span className="units">
-          |<a onClick={getCelsius}> °C </a>°F
+          |
+          <a href="#" onClick={getCelsius}>
+            {" "}
+            °C{" "}
+          </a>
+          °F
         </span>
       </div>
     );
