@@ -1,6 +1,6 @@
 .Weather .container {
   align-self: center;
-  background-color: #f4e4e3;
+  background-color: #f9ecec;
   border-radius: 6px;
   height: 700px;
   width: 400px;
@@ -8,11 +8,15 @@
 }
 
 .Weather .forecast {
-  border: 3px solid purple;
+  border: 3px transparent #fc624d;
+  background-color: #fc624d;
+  opacity: 70%;
   border-radius: 6px;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 22%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 20%;
 }
 
 .Weather .otherValues {
@@ -20,4 +24,18 @@
   margin: 0 auto;
   font-size: 14px;
   padding: 10px;
+}
+
+.WeatherData h1 {
+  color: #e14b43;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.Weather .degree {
+  color: #e14b43;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
 }
