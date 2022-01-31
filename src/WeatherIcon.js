@@ -1,5 +1,4 @@
 import React from "react";
-import { AnimatedWeatherIcon } from "animated-weather-icon";
 import ReactAnimatedWeather from "react-animated-weather";
 
 function WeatherIcon(props) {
