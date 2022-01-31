@@ -45,10 +45,14 @@ function Weather(props) {
             <input
               type="search"
               placeholder="Search a city"
-              className="search-form m-4"
+              className="search-form mt-5 mb-5"
               onChange={changeCity}
             ></input>
-            <input type="submit" value="Search"></input>
+            <input
+              className="search-button"
+              type="submit"
+              value="Search"
+            ></input>
           </form>
 
           <WeatherData data={weatherInfo} />

@@ -1,6 +1,7 @@
 import React from "react";
 import Dates from "./Dates";
 import WeatherIcon from "./WeatherIcon";
+import Temperatures from "./Temperatures";
 import humidity from "./img/humidity.png";
 import feels from "./img/feels.png";
 import wind from "./img/wind.png";
@@ -15,9 +16,7 @@ function WeatherData(props) {
       </p>
       <WeatherIcon iconData={props.data.icon} />
       <p className="text-capitalize">{props.data.description}</p>
-      <h3 className="degree m-3">
-        {Math.round(props.data.temperature)} °C | F
-      </h3>
+      <Temperatures celsius={props.data.temperature} />
       <div className="row">
         <div className="otherValues col-4">
           <img className="mb-2" src={humidity} alt="humidity" />

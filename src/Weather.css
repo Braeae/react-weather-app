@@ -1,15 +1,15 @@
 .Weather .container {
   align-self: center;
-  background-color: #f9ecec;
-  border-radius: 6px;
+  background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  border-radius: 8px;
   height: 700px;
   width: 400px;
   margin-top: 40px;
 }
 
 .Weather .forecast {
-  border: 3px transparent #fc624d;
-  background-color: #fc624d;
+  border: 2px solid #f4eaea;
+
   opacity: 70%;
   border-radius: 6px;
   flex-wrap: wrap;
@@ -17,6 +17,29 @@
   padding-top: 10px;
   padding-bottom: 20px;
   width: 20%;
+}
+
+.Weather .forecast:hover {
+  background: #f4eaea;
+}
+
+.Weather .search-form {
+  border: transparent;
+  border-radius: 18px;
+  width: 240px;
+  padding: 6px;
+}
+
+.Weather .search-button {
+  border: transparent;
+  border-radius: 18px;
+  width: 70px;
+  padding: 6px;
+  margin: 4px;
+  font-size: 14px;
+
+  background-color: white;
+  color: #e14b43;
 }
 
 .Weather .otherValues {
@@ -34,6 +57,14 @@
 }
 
 .Weather .degree {
+  color: #e14b43;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.Temperatures .current-temperature,
+.units {
   color: #e14b43;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
