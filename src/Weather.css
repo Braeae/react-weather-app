@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
 .Weather .container {
   align-self: center;
   background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
@@ -68,4 +72,16 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 500;
+}
+
+.Temperatures a {
+  text-decoration: none;
+  color: #e14b43;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+.Temperatures a:hover {
+  color: #ad362f;
+  font-weight: 600;
 }
