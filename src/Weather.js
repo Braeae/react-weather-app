@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 function Weather(props) {
@@ -56,6 +57,7 @@ function Weather(props) {
           </form>
 
           <WeatherData data={weatherInfo} />
+          <WeatherForecast coordinates={weatherInfo.coordinates} />
         </div>
         <p>
           Open-sourced on
