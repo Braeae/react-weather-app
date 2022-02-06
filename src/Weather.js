@@ -35,7 +35,7 @@ function Weather(props) {
   }
 
   function search() {
-    const apiKey = "cb03a7a361270bd4c4bf02f906b0c9fd";
+    const apiKey = "48db8e1b879f986b02bee0e6485f578d";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleSearch);
   }
@@ -47,7 +47,7 @@ function Weather(props) {
             <input
               type="search"
               placeholder="Search a city"
-              className="search-form mt-5 mb-5"
+              className="search-form mt-5 mb-5 ps-3"
               onChange={changeCity}
             ></input>
             <input

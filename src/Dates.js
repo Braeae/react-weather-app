@@ -21,7 +21,7 @@ function Dates(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <div>
+    <div className="DayTime">
       {day}, {hours}:{minutes}
     </div>
   );

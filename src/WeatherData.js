@@ -12,11 +12,11 @@ function WeatherData(props) {
   return (
     <div className="WeatherData">
       <h1>{props.data.city}</h1>
-      <p>
-        <Dates date={props.data.date} />
-      </p>
-      <WeatherIcon iconData={props.data.icon} />
-      <p className="text-capitalize">{props.data.description}</p>
+      <p className="text-capitalize mb-0">{props.data.description}</p>
+      <Dates date={props.data.date} />
+      <div className="WeatherIcon m-3">
+        <WeatherIcon iconData={props.data.icon} />
+      </div>
       <Temperatures celsius={props.data.temperature} />
       <div className="row">
         <div className="otherValues col-4">
