@@ -1,7 +1,6 @@
 import React from "react";
 import Dates from "./Dates";
 import WeatherIcon from "./WeatherIcon";
-import WeatherDay from "./WeatherDay";
 import Temperatures from "./Temperatures";
 import humidity from "./img/humidity.png";
 import feels from "./img/feels.png";
