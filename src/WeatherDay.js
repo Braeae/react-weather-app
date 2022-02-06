@@ -1,5 +1,7 @@
 import React from "react";
 import "./WeatherDay.css";
+import "./Weather.css";
+import "./WeatherForecast.css";
 
 function WeatherDay(props) {
   function day() {
@@ -25,8 +27,7 @@ function WeatherDay(props) {
     <div>
       <div className="WeatherDay-day">{day()}</div>
       <div className="WeatherDay-maxMin">
-        <span>{maxTemp()}</span>
-        <span>{minTemp()}</span>
+        <span>{maxTemp()} °C</span> <span>{minTemp()} °C</span>
       </div>
     </div>
   );

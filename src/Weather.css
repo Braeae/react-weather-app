@@ -11,21 +11,6 @@ body {
   margin-top: 40px;
 }
 
-.Weather .forecast {
-  border: 2px solid #f4eaea;
-  opacity: 70%;
-  border-radius: 6px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  width: 20%;
-}
-
-.Weather .forecast:hover {
-  background: #f4eaea;
-}
-
 .Weather .search-form {
   border: transparent;
   border-radius: 18px;

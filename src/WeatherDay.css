@@ -1,3 +1,3 @@
-.WeatherDay {
-  background: red;
+.WeatherDay span {
+  font-size: 8px;
 }

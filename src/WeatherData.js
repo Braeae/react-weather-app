@@ -1,6 +1,7 @@
 import React from "react";
 import Dates from "./Dates";
 import WeatherIcon from "./WeatherIcon";
+import WeatherDay from "./WeatherDay";
 import Temperatures from "./Temperatures";
 import humidity from "./img/humidity.png";
 import feels from "./img/feels.png";
@@ -40,28 +41,6 @@ function WeatherData(props) {
           </p>
         </div>
       </div>{" "}
-      <div className="row mt-5">
-        <div className="forecast col-3">
-          <p>Sun</p>
-          <p>5° 1°</p>
-          <p>IMG</p>
-        </div>
-        <div className="forecast col-3">
-          <p>Mon</p>
-          <p>5° 1°</p>
-          <p>IMG</p>
-        </div>
-        <div className="forecast col-3">
-          <p>Tue</p>
-          <p>5° 1°</p>
-          <p>IMG</p>
-        </div>
-        <div className="forecast col-3">
-          <p>Wed</p>
-          <p>5° 1°</p>
-          <p>IMG</p>
-        </div>
-      </div>
     </div>
   );
 }

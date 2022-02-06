@@ -1,0 +1,16 @@
+.WeatherForecast .dayForecast {
+  border: 2px solid #f4eaea;
+  opacity: 70%;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 22%;
+  height: 150px;
+}
+
+.WeatherForecast .dayForecast:hover {
+  background: #f4eaea;
+}
