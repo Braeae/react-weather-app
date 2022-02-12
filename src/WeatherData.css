@@ -4,8 +4,17 @@
   font-size: 42px;
   font-weight: 800;
 }
-.Dates .DayTime {
-  color: aqua;
+
+.DayTime {
+  color: black;
+  font-family: bellerose;
+  font-size: 14px;
+}
+
+.Description {
+  color: black;
+
+  font-size: 18px;
 }
 
 @font-face {

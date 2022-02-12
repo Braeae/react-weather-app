@@ -12,35 +12,38 @@ function WeatherData(props) {
   return (
     <div className="WeatherData">
       <h1>{props.data.city}</h1>
-      <p className="text-capitalize mb-0">{props.data.description}</p>
+      <p className="Description text-capitalize mb-0">
+        {props.data.description}
+      </p>
       <Dates date={props.data.date} />
       <div className="WeatherIcon m-3">
         <WeatherIcon iconData={props.data.icon} />
       </div>
       <Temperatures celsius={props.data.temperature} />
+
       <div className="row">
-        <div className="otherValues col-4">
-          <img className="mb-2" src={humidity} alt="humidity" />
+        <div className="OtherValues col-4">
+          <img className="OtherImages mb-2" src={humidity} alt="humidity" />
           <p>
             <strong>Humidity: </strong>
             {props.data.humidity}%
           </p>
         </div>
-        <div className="otherValues col-4">
-          <img className="mb-2" src={wind} alt="wind" />
+        <div className="OtherValues col-4">
+          <img className="OtherImages mb-2" src={wind} alt="wind" />
           <p>
             <strong>Wind: </strong>
             {Math.round(props.data.wind)} km/h{" "}
           </p>
         </div>
-        <div className="otherValues col-4">
-          <img className="mb-2" src={feels} alt="feels-like" />
+        <div className="OtherValues col-4">
+          <img className="OtherImages mb-2" src={feels} alt="feels-like" />
           <p>
             <strong>Feels like: </strong>
             {Math.round(props.data.feels)}°C
           </p>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }
