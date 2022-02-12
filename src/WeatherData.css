@@ -13,8 +13,17 @@
 
 .Description {
   color: black;
+  font-family: bellerose;
+  font-size: 20px;
+}
 
-  font-size: 18px;
+.OtherImages {
+  height: 22px;
+}
+.OtherValues {
+  color: black;
+  font-family: bellerose;
+  font-size: 16px;
 }
 
 @font-face {
