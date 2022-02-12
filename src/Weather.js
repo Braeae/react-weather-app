@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
 import WeatherForecast from "./WeatherForecast";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./Weather.css";
 
 function Weather(props) {
@@ -49,12 +47,14 @@ function Weather(props) {
             <input
               type="search"
               placeholder="Search a city"
-              className="search-form mt-5 mb-3 ps-3"
+              className="search-form mt-5 mb-5 ps-3"
               onChange={changeCity}
             ></input>
-            <button className="search-button" type="submit">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />{" "}
-            </button>
+            <input
+              className="search-button"
+              type="submit"
+              value="Search"
+            ></input>
           </form>
 
           <WeatherData data={weatherInfo} />
