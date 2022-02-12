@@ -1,17 +1,20 @@
 body {
-  background: radial-gradient(circle at 50%, #b3dbd3, #f4d6db);
-  /*linear-gradient(90deg, #cfecd0, #ffc5ca);*/
-  /* linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);*/
+  background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
 }
 
 .Weather .container {
   align-self: center;
+<<<<<<< HEAD
   background-color: #eec1bc;
   /*#a2e1d8;*/
   /*radial-gradient(circle at 50%, #f8d470, #a2e1d8);*/
   /*linear-gradient(to top, #feada6 0%, #f5efef 100%);*/
   border: 2px solid #e14b43;
   border-radius: 10px;
+=======
+  background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  border-radius: 8px;
+>>>>>>> parent of c88f0c3 (Fonts added)
   height: 700px;
   width: 420px;
   margin-top: 40px;
@@ -25,13 +28,14 @@ body {
 }
 
 .Weather .search-button {
-  background-color: white;
-  border: px transparent white;
-  border-radius: 22px;
-  width: 60px;
+  border: transparent;
+  border-radius: 18px;
+  width: 70px;
   padding: 6px;
+  margin: 4px;
   font-size: 14px;
-  margin-left: -61px;
+
+  background-color: white;
   color: #e14b43;
 }
 
@@ -42,19 +46,29 @@ body {
   padding: 10px;
 }
 
+<<<<<<< HEAD
+=======
+.WeatherData h1 {
+  color: #e14b43;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+>>>>>>> parent of c88f0c3 (Fonts added)
 .Weather .degree {
   color: #e14b43;
-  font-family: "bellerose";
-  font-size: 42px;
-  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .Temperatures .current-temperature,
 .units {
   color: #e14b43;
-  font-family: "bellerose";
-  font-size: 42px;
-  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .Temperatures a {
