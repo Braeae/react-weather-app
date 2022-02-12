@@ -25,9 +25,9 @@ function WeatherDay(props) {
   }
 
   return (
-    <div>
-      <div className="WeatherDay-day mb-2">{day()}</div>
-      <div className="WeatherDay-maxMin mb-3">
+    <div className="WeatherDay">
+      <div className="WeatherDay-day mb-1">{day()}</div>
+      <div className="WeatherDay-maxMin mb-4">
         <span className="MaxTemp me-1">{maxTemp()}° </span>
         <span className="MinTemp"> {minTemp()}°</span>
       </div>

@@ -1,21 +1,13 @@
-.WeatherForecast .daily {
-  border: 3px solid #f4eaea;
-  border-radius: 6px;
-  flex-wrap: wrap;
-  font-family: bellerose;
-  font-size: 18px;
-  font-weight: 600;
-  opacity: 90%;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 22%;
-  height: 160px;
+.WeatherData h1 {
+  color: #e14b43;
+  font-family: "bellerose";
+  font-size: 42px;
+  font-weight: 800;
+}
+.Dates .DayTime {
+  color: aqua;
 }
 
-.WeatherForecast .daily:hover {
-  background: #f4eaea;
-}
 @font-face {
   font-family: "Nunito";
   src: local("Nunito"), url("./fonts/Nunito/Nunito-Regular.ttf");

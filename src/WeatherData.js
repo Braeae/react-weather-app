@@ -6,6 +6,7 @@ import humidity from "./img/humidity.png";
 import feels from "./img/feels.png";
 import wind from "./img/wind.png";
 import "./Weather.css";
+import "./WeatherData.css";
 
 function WeatherData(props) {
   return (

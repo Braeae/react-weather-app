@@ -1,4 +1,5 @@
 import React from "react";
+import "./WeatherData.css";
 
 function Dates(props) {
   let days = [
