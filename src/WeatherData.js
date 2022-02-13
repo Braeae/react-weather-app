@@ -21,7 +21,7 @@ function WeatherData(props) {
       </div>
       <Temperatures celsius={props.data.temperature} />
 
-      <div className="row mt-3 mb-2">
+      <div className="row mt-3 mb-3">
         <div className="OtherValues col-4">
           <img className="OtherImages mb-2" src={humidity} alt="humidity" />
           <p>
