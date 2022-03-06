@@ -7,23 +7,15 @@ function App() {
       <div className="container">
         <Weather defaultCity="Amsterdam" />
       </div>
-      <p className="AppInfo m-2">
-        Open-sourced on{" "}
+      <p className="AppInfo m-3">
         <a
           href="https://github.com/Braeae/react-weather-app"
           target="_blank"
           rel="noreferrer"
         >
-          GitHub
+          Open-source
         </a>{" "}
-        and hosted on{" "}
-        <a
-          href="https://suspicious-easley-0813d1.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Netlify
-        </a>
+        project by Büşra © 2022
       </p>
     </div>
   );
