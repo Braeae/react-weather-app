@@ -21,7 +21,7 @@ function App() {
           rel="noreferrer"
         >
           project
-        </a>
+        </a>{" "}
         by Büşra © 2022
       </p>
     </div>
