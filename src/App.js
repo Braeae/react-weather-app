@@ -15,7 +15,14 @@ function App() {
         >
           Open-source
         </a>{" "}
-        project by Büşra © 2022
+        <a
+          href="https://suspicious-easley-0813d1.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          project
+        </a>
+        by Büşra © 2022
       </p>
     </div>
   );
